@@ -1,8 +1,19 @@
 @import 'reset.scss';
-p{
-	color: aqua ;
+
+body, .wrapper {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  // Це запобігає прокрутці, якщо ви хочете, щоб весь контент поміщався на одному екрані
 }
-h1{
-	color: red;
-	display: flex;
+
+header {
+    background: url(/img/1_section/fon.svg) no-repeat center center;
+    background-size: cover;  // Забезпечує покриття всього вікна
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  // Центруємо текст у header
 }
