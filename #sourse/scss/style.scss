@@ -1,37 +1,51 @@
 @import 'reset.scss';
 
-
 body, .wrapper {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .header {
-	background: url(../img/1_section/fon.svg) no-repeat center center;
-	background-size: cover;
-	width: 100vw;
-	height: 100vh;
+    background: url(../img/1_section/fon.svg) no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 
     &__logo {
-		width: 26%;
+        width: 26%;
+        @media screen and (max-width: 640px) { // Example for mobile responsiveness
+            width: 60%;
+        }
     }
 
     &__moon {
-		width: 100%;
-		bottom: -22%;
+        width: 100%;
+        bottom: -22%;
     }
 
     &__star {
         &--yellow1 {
-            top: 30%; // Або інший % для правильного розміщення
+            top: 30%;
             left: 40%;
+            @media screen and (max-width: 640px) { // Example for mobile responsiveness
+                top: 20%;
+                left: 30%;
+            }
         }
         &--yellow2 {
-            top: 40%; // Або інший %
+            top: 40%;
             left: 30%;
+            @media screen and (max-width: 640px) { // Example for mobile responsiveness
+                top: 30%;
+                left: 20%;
+            }
         }
         &--purple {
-            top: 35%; // Або інший %
+            top: 35%;
             right: 30%;
+            @media screen and (max-width: 640px) { // Example for mobile responsiveness
+                top: 25%;
+                right: 20%;
+            }
         }
     }
 }
