@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SRS</title>
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="style/style.css">
 </head>
 
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<img src="/img/1_section/SRS.svg" alt="LOGO_WELCOME">
-		</header>
-	</div>
-
+<body class="">
+	<header class="header flex justify-center items-center h-screen w-screen relative">
+		<img src="/img/1_section/SRS.svg" alt="LOGO_WELCOME" class="header__logo">
+		<img src="/img/1_section/moon.svg" alt="Moon" class="header__moon absolute  w-full">
+		<!-- Stars can be positioned using absolute positioning in combination with Tailwind classes -->
+		<img src="/img/1_section/big_y_star_1.svg" alt="big_y_star_1" class="header__star header__star--yellow1 absolute">
+		<img src="/img/1_section/big_y_star_2.svg" alt="big_y_star_2" class="header__star header__star--yellow2 absolute">
+		<img src="/img/1_section/big_p_star_1.svg" alt="big_p_star_1" class="header__star header__star--purple absolute">
+	</header>
 </body>
 
 </html>

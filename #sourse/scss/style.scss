@@ -1,19 +1,35 @@
 @import 'reset.scss';
 
+
 body, .wrapper {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;  // Це запобігає прокрутці, якщо ви хочете, щоб весь контент поміщався на одному екрані
+	overflow: hidden;
 }
 
-header {
-    background: url(/img/1_section/fon.svg) no-repeat center center;
-    background-size: cover;  // Забезпечує покриття всього вікна
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;  // Центруємо текст у header
+.header {
+	background: url(/img/1_section/fon.svg) no-repeat center center;
+	background-size: cover;
+	
+
+    &__logo {
+
+    }
+
+    &__moon {
+		bottom: -18%;
+    }
+
+    &__star {
+        &--yellow1 {
+            top: 30%; // Або інший % для правильного розміщення
+            left: 40%;
+        }
+        &--yellow2 {
+            top: 40%; // Або інший %
+            left: 30%;
+        }
+        &--purple {
+            top: 35%; // Або інший %
+            right: 30%;
+        }
+    }
 }
