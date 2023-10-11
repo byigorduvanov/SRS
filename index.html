@@ -6,40 +6,79 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SRS</title>
 	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="style/fullpage.min.css">
 	<link rel="stylesheet" href="style/style.css">
 </head>
 
 <body class="">
-	<header class="header flex justify-center items-center relative ">
-		<img src="img/1_section/SRS.svg" alt="LOGO_WELCOME" class="header__logo">
-		<img src="img/1_section/moon.svg" alt="Moon" class="header__moon absolute">
+	<div class="wrapper" id="fullpage">
+		<div class="section">
+			<header class="header flex justify-center items-center relative ">
+				<img src="img/1_section/SRS.svg" alt="LOGO_WELCOME" class="header__logo">
+				<img src="img/1_section/moon.svg" alt="Moon" class="header__moon absolute">
 
-		<!-- Parallax container starts here -->
-		<div class="parallax-wrap absolute w-full h-full">
-			<!-- All elements within this container will have the parallax effect -->
-			<img src="img/1_section/big_y_star_1.svg" alt="big_y_star_1"
-				class="header__star header__star--big-yellow1 absolute" value="-10" data-initial-x="0" data-initial-y="0">
-			<img src="img/1_section/big_y_star_2.svg" alt="big_y_star_2"
-				class="header__star header__star--big-yellow2 absolute" value="3" data-initial-x="0" data-initial-y="0">
-			<img src="img/1_section/big_p_star_1.svg" alt="big_p_star_1"
-				class="header__star header__star--big-purple absolute" value="20" data-initial-x="0" data-initial-y="0">
+				<!-- Parallax container starts here -->
+				<div class="parallax-wrap absolute w-full h-full">
+					<!-- All elements within this container will have the parallax effect -->
+					<img src="img/1_section/big_y_star_1.svg" alt="big_y_star_1"
+						class="header__star header__star--big-yellow1 absolute" value="-10" data-initial-x="0"
+						data-initial-y="0">
+					<img src="img/1_section/big_y_star_2.svg" alt="big_y_star_2"
+						class="header__star header__star--big-yellow2 absolute" value="3" data-initial-x="0"
+						data-initial-y="0">
+					<img src="img/1_section/big_p_star_1.svg" alt="big_p_star_1"
+						class="header__star header__star--big-purple absolute" value="20" data-initial-x="0"
+						data-initial-y="0">
 
-			<img src="img/1_section/small_p_star_1.svg" alt="small_p_star_1"
-				class="header__star header__star--small-purple1 absolute" value="-7" data-initial-x="0" data-initial-y="0">
-			<img src="img/1_section/small_p_star_2.svg" alt="small_p_star_2"
-				class="header__star header__star--small-purple2 absolute" value="7" data-initial-x="0" data-initial-y="0">
-			<img src="img/1_section/small_y_star_1.svg" alt="small_y_star_1"
-				class="header__star header__star--small-yellow absolute" value="-7" data-initial-x="0" data-initial-y="0">
+					<img src="img/1_section/small_p_star_1.svg" alt="small_p_star_1"
+						class="header__star header__star--small-purple1 absolute" value="-7" data-initial-x="0"
+						data-initial-y="0">
+					<img src="img/1_section/small_p_star_2.svg" alt="small_p_star_2"
+						class="header__star header__star--small-purple2 absolute" value="7" data-initial-x="0"
+						data-initial-y="0">
+					<img src="img/1_section/small_y_star_1.svg" alt="small_y_star_1"
+						class="header__star header__star--small-yellow absolute" value="-7" data-initial-x="0"
+						data-initial-y="0">
 
-			<img src="img/1_section/ellipse_p_1.svg" alt="ellipse_p_1"
-				class="header__star header__star--ellipse-purple absolute" value="-7" data-initial-x="0" data-initial-y="0">
-			<img src="img/1_section/ellipse_p_1.svg" alt="ellipse_p_1"
-				class="header__star header__star--ellipse-purple-2 absolute" value="-7" data-initial-x="0"
-				data-initial-y="0">
+					<img src="img/1_section/ellipse_p_1.svg" alt="ellipse_p_1"
+						class="header__star header__star--ellipse-purple absolute" value="-7" data-initial-x="0"
+						data-initial-y="0">
+					<img src="img/1_section/ellipse_p_1.svg" alt="ellipse_p_1"
+						class="header__star header__star--ellipse-purple-2 absolute" value="-7" data-initial-x="0"
+						data-initial-y="0">
+				</div>
+			</header>
 		</div>
-	</header>
+		<!-- Section 2 -->
+		<div class="section">
+			<section class="section--two bg-gray-100 py-20">
+				<div class="container mx-auto text-center">
+					<h2 class="section__title text-3xl mb-10">Section Two Title</h2>
+					<p class="section__text text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+						non
+						urna
+						vitae velit ullamcorper pulvinar.</p>
+				</div>
+			</section>
+		</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+		<!-- Section 3 -->
+		<div class="section">
+			<section class=" section--three bg-white py-20">
+				<div class="container mx-auto bg-white text-center">
+					<h2 class="section__title text-3xl mb-10">Section Three Title</h2>
+					<p class="section__text text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+						non
+						urna
+						vitae velit ullamcorper pulvinar.</p>
+				</div>
+			</section>
+		</div>
+
+
+
+	</div>
+
 	<script src="js/main.js"></script>
 </body>
 

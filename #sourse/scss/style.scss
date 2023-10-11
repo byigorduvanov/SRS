@@ -1,16 +1,18 @@
 @import 'reset.scss';
 
-body, .wrapper {
-    overflow: hidden;
+body{
 	scroll-behavior: smooth;
+	background-color: #2B1D5A;
 }
-
+.wrapper{
+	// overflow: hidden;
+}
 .header {
     background: url(../img/1_section/fon.svg) no-repeat center center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
-
+	overflow: hidden;
     &__logo {
         width: 26%;
         @media screen and (max-width: 640px) {
@@ -94,3 +96,7 @@ body, .wrapper {
     }
 }
 
+.section{
+	width: 100vw;
+	height: 100vh;
+}
