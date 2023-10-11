@@ -6,16 +6,18 @@ body, .wrapper {
 }
 
 .header {
-	background: url(/img/1_section/fon.svg) no-repeat center center;
+	background: url(img/1_section/fon.svg) no-repeat center center;
 	background-size: cover;
-	
+	width: 100vw;
+	height: 100vh;
 
     &__logo {
-
+		width: 26%;
     }
 
     &__moon {
-		bottom: -18%;
+		width: 100%;
+		bottom: -22%;
     }
 
     &__star {
