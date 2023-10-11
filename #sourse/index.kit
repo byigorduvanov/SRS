@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SRS</title>
-	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -13,26 +13,35 @@
 	<header class="header flex justify-center items-center relative">
 		<img src="img/1_section/SRS.svg" alt="LOGO_WELCOME" class="header__logo">
 		<img src="img/1_section/moon.svg" alt="Moon" class="header__moon absolute">
-		<!-- Stars can be positioned using absolute positioning in combination with Tailwind classes -->
-		<img src="img/1_section/big_y_star_1.svg" alt="big_y_star_1"
-			class="header__star header__star--big-yellow1 absolute">
-		<img src="img/1_section/big_y_star_2.svg" alt="big_y_star_2"
-			class="header__star header__star--big-yellow2 absolute">
-		<img src="img/1_section/big_p_star_1.svg" alt="big_p_star_1"
-			class="header__star header__star--big-purple absolute">
 
-		<img src="img/1_section/small_p_star_1.svg" alt="small_p_star_1"
-			class="header__star header__star--small-purple1 absolute">
-		<img src="img/1_section/small_p_star_2.svg" alt="small_p_star_2"
-			class="header__star header__star--small-purple2 absolute">
-		<img src="img/1_section/small_y_star_1.svg" alt="small_y_star_1"
-			class="header__star header__star--small-yellow absolute">
+		<!-- Parallax container starts here -->
+		<div class="parallax absolute w-full h-full" data-relative-input="true">
+			<!-- All elements within this container will have the parallax effect -->
+			<img src="img/1_section/big_y_star_1.svg" alt="big_y_star_1"
+				class="header__star header__star--big-yellow1 absolute" data-depth="0.2">
+			<img src="img/1_section/big_y_star_2.svg" alt="big_y_star_2"
+				class="header__star header__star--big-yellow2 absolute" data-depth="0.3">
+			<img src="img/1_section/big_p_star_1.svg" alt="big_p_star_1"
+				class="header__star header__star--big-purple absolute" data-depth="0.4">
 
-		<img src="img/1_section/ellipse_p_1.svg" alt="ellipse_p_1"
-			class="header__star header__star--ellipse-purple absolute">
-		<img src="img/1_section/ellipse_p_1.svg" alt="ellipse_p_1"
-			class="header__star header__star--ellipse-purple-2 absolute">
+			<img src="img/1_section/small_p_star_1.svg" alt="small_p_star_1"
+				class="header__star header__star--small-purple1 absolute" data-depth="0.2">
+			<img src="img/1_section/small_p_star_2.svg" alt="small_p_star_2"
+				class="header__star header__star--small-purple2 absolute" data-depth="0.3">
+			<img src="img/1_section/small_y_star_1.svg" alt="small_y_star_1"
+				class="header__star header__star--small-yellow absolute" data-depth="0.1">
+
+			<img src="img/1_section/ellipse_p_1.svg" alt="ellipse_p_1"
+				class="header__star header__star--ellipse-purple absolute" data-depth="0.2">
+			<img src="img/1_section/ellipse_p_1.svg" alt="ellipse_p_1"
+				class="header__star header__star--ellipse-purple-2 absolute" data-depth="0.3">
+		</div>
 	</header>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
+		integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
