@@ -12,7 +12,7 @@ body, .wrapper {
 
     &__logo {
         width: 26%;
-        @media screen and (max-width: 640px) { // Example for mobile responsiveness
+        @media screen and (max-width: 640px) {
             width: 60%;
         }
     }
@@ -23,29 +23,69 @@ body, .wrapper {
     }
 
     &__star {
-        &--yellow1 {
+        &--big-yellow1 {
             top: 30%;
             left: 40%;
-            @media screen and (max-width: 640px) { // Example for mobile responsiveness
+            @media screen and (max-width: 640px) {
                 top: 20%;
                 left: 30%;
             }
         }
-        &--yellow2 {
+        &--big-yellow2 {
             top: 40%;
             left: 30%;
-            @media screen and (max-width: 640px) { // Example for mobile responsiveness
+            @media screen and (max-width: 640px) {
                 top: 30%;
                 left: 20%;
             }
         }
-        &--purple {
+        &--big-purple {
             top: 35%;
             right: 30%;
-            @media screen and (max-width: 640px) { // Example for mobile responsiveness
+            @media screen and (max-width: 640px) {
                 top: 25%;
                 right: 20%;
             }
+        }
+        &--small-purple1 {
+			top: 10%;
+			right: 50%;
+			@media screen and (max-width: 640px) {
+				top: 5%;
+				right: 25%;
+			}
+        }
+        &--small-purple2 {
+			top: 44%;
+			right: 22%;
+			@media screen and (max-width: 640px) {
+				top: 11%;
+				right: 55%;
+			}
+        }
+        &--small-yellow {
+        	top: 63%;
+            right: 42%;
+            @media screen and (max-width: 640px) {
+                top: 45%;
+                right: 72%;
+            }
+        }
+        &--ellipse-purple {
+			top: 62%;
+			right: 52%;
+			@media screen and (max-width: 640px) {
+				top: 83%;
+				right: 73%;
+			}
+        }
+		&--ellipse-purple-2{
+			top: 52%;
+			right: 12%;
+			@media screen and (max-width: 640px) {
+				top: 73%;
+				right: 23%;
+			}
         }
     }
 }
