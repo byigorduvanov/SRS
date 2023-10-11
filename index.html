@@ -10,37 +10,36 @@
 </head>
 
 <body class="">
-	<header class="header flex justify-center items-center relative">
+	<header class="header flex justify-center items-center relative ">
 		<img src="img/1_section/SRS.svg" alt="LOGO_WELCOME" class="header__logo">
 		<img src="img/1_section/moon.svg" alt="Moon" class="header__moon absolute">
 
 		<!-- Parallax container starts here -->
-		<div class="parallax absolute w-full h-full" data-relative-input="true">
+		<div class="parallax-wrap absolute w-full h-full">
 			<!-- All elements within this container will have the parallax effect -->
 			<img src="img/1_section/big_y_star_1.svg" alt="big_y_star_1"
-				class="header__star header__star--big-yellow1 absolute" data-depth="0.2">
+				class="header__star header__star--big-yellow1 absolute" value="-10" data-initial-x="0" data-initial-y="0">
 			<img src="img/1_section/big_y_star_2.svg" alt="big_y_star_2"
-				class="header__star header__star--big-yellow2 absolute" data-depth="0.3">
+				class="header__star header__star--big-yellow2 absolute" value="-3" data-initial-x="0" data-initial-y="0">
 			<img src="img/1_section/big_p_star_1.svg" alt="big_p_star_1"
-				class="header__star header__star--big-purple absolute" data-depth="0.4">
+				class="header__star header__star--big-purple absolute" value="-3" data-initial-x="0" data-initial-y="0">
 
 			<img src="img/1_section/small_p_star_1.svg" alt="small_p_star_1"
-				class="header__star header__star--small-purple1 absolute" data-depth="0.2">
+				class="header__star header__star--small-purple1 absolute" value="-7" data-initial-x="0" data-initial-y="0">
 			<img src="img/1_section/small_p_star_2.svg" alt="small_p_star_2"
-				class="header__star header__star--small-purple2 absolute" data-depth="0.3">
+				class="header__star header__star--small-purple2 absolute" value="-7" data-initial-x="0" data-initial-y="0">
 			<img src="img/1_section/small_y_star_1.svg" alt="small_y_star_1"
-				class="header__star header__star--small-yellow absolute" data-depth="0.1">
+				class="header__star header__star--small-yellow absolute" value="-7" data-initial-x="0" data-initial-y="0">
 
 			<img src="img/1_section/ellipse_p_1.svg" alt="ellipse_p_1"
-				class="header__star header__star--ellipse-purple absolute" data-depth="0.2">
+				class="header__star header__star--ellipse-purple absolute" value="-7" data-initial-x="0" data-initial-y="0">
 			<img src="img/1_section/ellipse_p_1.svg" alt="ellipse_p_1"
-				class="header__star header__star--ellipse-purple-2 absolute" data-depth="0.3">
+				class="header__star header__star--ellipse-purple-2 absolute" value="-7" data-initial-x="0"
+				data-initial-y="0">
 		</div>
 	</header>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
-		integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
