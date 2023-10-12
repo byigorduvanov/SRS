@@ -8,17 +8,22 @@
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" href="style/fullpage.min.css">
 	<link rel="stylesheet" href="style/style.css">
+
 </head>
 
 <body class="">
 	<div class="wrapper" id="fullpage">
 		<div class="section">
+
 			<header class="header flex justify-center items-center relative ">
+				<div id="particles-background" class="vertical-centered-box"></div>
+				<div id="particles-foreground" class="vertical-centered-box"></div>
 				<img src="img/1_section/SRS.svg" alt="LOGO_WELCOME" class="header__logo">
 				<img src="img/1_section/moon.svg" alt="Moon" class="header__moon absolute">
 
 				<!-- Parallax container starts here -->
 				<div class="parallax-wrap absolute w-full h-full">
+
 					<!-- All elements within this container will have the parallax effect -->
 					<img src="img/1_section/big_y_star_1.svg" alt="big_y_star_1"
 						class="header__star header__star--big-yellow1 absolute" value="-10" data-initial-x="0"
@@ -64,6 +69,8 @@
 
 		<!-- Section 3 -->
 		<div class="section">
+
+
 			<section class=" section--three bg-white py-20">
 				<div class="container mx-auto bg-white text-center">
 					<h2 class="section__title text-3xl mb-10">Section Three Title</h2>
@@ -78,8 +85,11 @@
 
 
 	</div>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"
+		integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/main.js"></script>
+
 </body>
 
 </html>
