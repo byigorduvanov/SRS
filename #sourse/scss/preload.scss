@@ -9,7 +9,7 @@
 	justify-content: center;	
 	align-items: center;
 	transition: all 0.5s ease;
-	
+	z-index: 100;
 	.planet_1, .planet_2, .planet_3{
 		height: 100px;
 		position: absolute;
@@ -59,8 +59,11 @@
 		font-size: 30px;
 		font-family: sans-serif;
 	}
-	.preload_finish{
-		opacity: 0;	
-		pointer-events: none;
-	}
+
+  
+}
+.preload_finish {
+	opacity: 0;    
+	pointer-events: none;
+	
 }
