@@ -3,3 +3,11 @@ window.addEventListener("load", () => {
 	const preload = document.querySelector(".preload");
 	preload.classList.add("preload_finish");
 });
+window.onload = function () {
+	// Hide the preloader
+	document.getElementById('preloader').style.display = 'none';
+
+	// Display the "logo and moon" elements
+	document.getElementById('logo').style.display = 'block';
+	document.getElementById('moon').style.display = 'block';
+};
