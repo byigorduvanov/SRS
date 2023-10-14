@@ -1,6 +1,5 @@
 .preload{
 	position: relative;
-	top: 0;
 	width: 100%;
 	height: 100vh;
 	background: url(../img/1_section/fon.svg) no-repeat center center;
@@ -11,7 +10,7 @@
 	transition: all 0.5s ease;
 	z-index: 100;
 	.planet_1, .planet_2, .planet_3{
-		height: 100px;
+		height: 10%;
 		position: absolute;
 		right: 0%;
 		z-index: -1;
@@ -39,18 +38,28 @@
 			right: 130%;
 		}
 	}
-	.roket{
-		height: 200px;
-		animation: roket 1s ease infinite alternate;
-		@keyframes roket {
-			from{
-				transform: translateY(0px);
-			}
-			to{
-				transform: translateY(50px);
-			}
-		}
-	}
+    .roket {
+        width: 20%;
+
+        animation: roket 1s ease infinite alternate;
+
+        @media (max-width: 768px) {  // This is for devices smaller than 768px
+            width: 40%;
+        }
+
+        @media (max-width: 480px) {  // This is for even smaller devices
+            width: 50%;
+        }
+
+        @keyframes roket {
+            from {
+                transform: translateY(0px);
+            }
+            to {
+                transform: translateY(50px);
+            }
+        }
+    }
 	& h3{
 		position: absolute;
 		top: 75%;
@@ -65,5 +74,5 @@
 .preload_finish {
 	opacity: 0;    
 	pointer-events: none;
-	
+	display: none;
 }
